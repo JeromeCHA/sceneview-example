@@ -21,6 +21,8 @@ I created a custom `SceneView` to override the default `destroy()` behavior and 
 
 https://github.com/JeromeCHA/sceneview-example/blob/aead60d71e466d1aeece1ccb7dcfa46becd5c258/app/src/main/java/cha/jerome/sceneviewexample/sceneview/CustomSceneView.kt#L8-L28
 
+I assume, by overriding the destroy function here, I avoid sceneview to be recycled properly, but I wonder if there is any better idea.
+
 ### Suspected Memory Leak
 
 While this setup prevents the engine from being recreated repeatedly, I suspect that overriding the `destroy()` method without properly cleaning up other resources leads to a **memory leak**, which eventually causes a crash.
