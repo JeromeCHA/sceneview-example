@@ -27,6 +27,8 @@ While this setup prevents the engine from being recreated repeatedly, I suspect 
 
 ![Screen Recording 2025-06-23 at 16 42 36](https://github.com/user-attachments/assets/9a6108e3-7f62-4898-b9b1-8398c0ca56b3)
 
+As the gif above shows, by scrolling multiple times up and down, the memory usage is increasing which will lead to a OOM crash later
+
 ---
 
 ## Tech Stack
